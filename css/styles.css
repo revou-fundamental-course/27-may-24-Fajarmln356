@@ -1,1 +1,27 @@
 /* CSS Page */
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ---- Navigation Bar ----*/
+.navbar-container {
+    height: auto; 
+    width: auto; 
+    border-bottom: 1px solid;
+    border-color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-img img {
+    width: 18%;
+    height: 18%;
+    margin-top: 1.5%;
+    margin-left: 10%;
+}
