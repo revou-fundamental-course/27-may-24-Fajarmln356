@@ -109,12 +109,57 @@
 
 /*------ Our Profile Container ------*/
 
+
+
 /*------ Facilitation Container ------*/
 .facilitation-container {
     height: fit-content;
     width: auto;
     border-bottom: 1px solid black;
+
 }
+
+.header-facilitation {
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.content-facilitation {
+    justify-content: start;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.content-1-facilitation {
+    margin-left: 15%;
+}
+
+.content-2-facilitation {
+    margin-left: 10%;
+}
+
+.content-3-facilitation {
+    margin-left: 10%;
+}
+
+.content-4-facilitation {
+    margin-left: 10%;
+}
+
+.content-img-facilitation {
+    margin-top: 30%;
+}
+
+.content-img-facilitation img {
+    /*width: 100px;*/
+    height: 150px;
+}
+
+.content-text-facilitation {
+    margin-top: 5px;
+    text-align: center;
+}
+
 
 /*------ Message Us Container ------*/
 .message-container {
@@ -122,17 +167,34 @@
     width: auto;
     border-bottom: 1px solid black;
 }
+
+.header-message {
+    margin-left: 10%;
+}
+
+
 /*------ Footer Container ------*/
 .footer-container {
     height: fit-content;
     width: auto;
+    text-align: end;
+    padding-right: 65px;
 }
 
+.footer-container > h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+}
 .footer-container > h2 > a {
     text-decoration: none;
     color: black;
+
 }
 
 .footer-container a:hover {
     color: yellow;
+    
 }
