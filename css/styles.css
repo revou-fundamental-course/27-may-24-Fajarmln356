@@ -116,7 +116,7 @@
     height: fit-content;
     width: auto;
     border-bottom: 1px solid black;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-facilitation {
@@ -166,10 +166,38 @@
     height: fit-content;
     width: auto;
     border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-message {
+    margin-top: 4%;
     margin-left: 10%;
+    margin-bottom: 3.5%;
+}
+
+.content-message {
+    display: flex;
+    padding-left: 10%;
+}
+
+.content-input-message > div {
+    margin-top: 30px;
+}
+
+.name-message > label {
+    margin-right: 80px;
+}
+
+.date-message > label {
+    margin-right: 64px;
+}
+
+.gender-message > label {
+    margin-right: 69px;
+}
+
+.message-message > label {
+    margin-right: 58px;
 }
 
 
