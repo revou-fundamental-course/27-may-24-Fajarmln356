@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 /* ---- Navigation Bar ----*/
@@ -23,5 +22,74 @@
     width: 18%;
     height: 18%;
     margin-top: 1.5%;
-    margin-left: 10%;
+    margin-left: 13%;
 }
+
+.nav-menu {
+    display: flex;
+    margin-right: 8%;
+}
+
+
+.nav-menu > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 20px 7px 20px;
+    font-size: 15px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-home {
+    width: 75px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+}
+.nav-home:hover {
+    background-color: yellow;
+}
+
+.nav-profile {
+    width: 75px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.nav-profile:hover {
+    background-color: yellow;
+}
+
+.nav-achievement {
+    width: 75px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.nav-achievement:hover {
+    background-color: yellow;
+}
+
+.nav-message {
+    width: 75px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav-message:hover {
+    background-color: yellow;
+}
+
+/*------ Home Container ------*/
+
+/*------ Our Profile Container ------*/
+
+/*------  Container ------*/
+
+/*------ Home Container ------*/
