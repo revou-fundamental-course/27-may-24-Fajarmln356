@@ -64,27 +64,35 @@
                 <h2>Message Us</h2>
             </header>
             <div class="content-message">
-                <div class="content-input-message">
+                <form class="content-input-message">
                     <div class="name-message">
-                        <label for="">Name</label>
-                        <input type="text">
+                        <label for="fname">Name</label>
+                        <input type="text" placeholder="Name">
                     </div>
                     <div class="date-message">
-                        <label for="">Birthday</label>
+                        <label for="date">Birthday</label>
                         <input type="date">
                     </div>
                     <div class="gender-message">
-                        <label for="">Gender</label>
-                        <input type="text">
+                        <label for="gender">Gender</label>
+                        <label for="male">
+                            <input type="checkbox">
+                            <span>Male</span>
+                        </label>
+                        <label for="female">
+                            <input type="checkbox">
+                            <span>Female</span>
+                        </label>
                     </div>
                     <div class="message-message">
-                        <label for="">Message</label>
-                        <input type="text">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message-area" placeholder="Write a message for Us"></textarea>
                     </div>
                     <div class="send-message">
                         <input type="button">
                     </div>
-                </div>
+                </form>
+
                 <div class="content-output-message">
                     <div class="">
                         <span>test</span>
