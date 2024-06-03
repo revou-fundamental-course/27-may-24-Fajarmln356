@@ -100,7 +100,7 @@
     height: inherit;
     background-size: cover;
     background-position: center;
-    background-image: url(../Assets/image/image_1.png);
+    background-image: url(../Assets/image/image_2.png);
     /*background-repeat: no-repeat;*/
     display: flex;
     justify-content: left;
@@ -123,9 +123,60 @@
 
 /*------ Our Profile Container ------*/
 .profile_container {
-    height: max-content;
+    height: auto;
     width: auto;
     border-bottom: 1px solid black;
+}
+
+.profile_header > h2 {
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.profile_about_container {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 120px;
+    padding-left: 200px;
+}
+
+.img_profile {
+    margin-right: 120px;
+}
+.img_profile > img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.img_profile span {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: small;
+}
+
+.about_profile {
+    margin-top: 10px;
+}
+.about_profile > h3 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.about_profile > p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px
+}
+
+.about_profile > p > span {
+    font-style: normal;
+    font-weight: bold;
 }
 
 
