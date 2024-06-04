@@ -58,11 +58,6 @@
                          pony, fire chicken, golden cat, squat toilet.</p>
                 </div>
             </section>
-            <section class="profile_major_container">
-                <div class="fire"></div>
-                <div class="water"></div>
-                <div class="void"></div>
-            </section>
 
         </section>
         <!-- Our facilitation Content -->
@@ -96,16 +91,16 @@
                 <h2>Message Us</h2>
             </header>
             <div class="content-message">
-                <form class="content-input-message">
+                <form class="content-input-message" id="messageForm">
                     <div class="name-message">
                         <label for="fname">Name</label>
                         <span class="colon">:</span>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" id="name">
                     </div>
                     <div class="date-message">
                         <label for="date">Birthday</label>
                         <span class="colon">:</span>
-                        <input type="date">
+                        <input type="date" id="birthDay">
                     </div>
                     <div class="gender-message">
                         <label for="gender">Gender</label>
@@ -124,15 +119,17 @@
                         <span class="colon">:</span>
                         <textarea name="message" id="message-area" placeholder="Write a message for Us"></textarea>
                     </div>
-                    <div class="send-message">
-                        <input type="button">
-                    </div>
+                    <button type="submit">
+                        <span>Submit</span>
+                    </button>
                 </form>
 
-                <div class="content-output-message">
-                    <div class="">
-                        <span>test</span>
-                    </div>
+                <div class="content-output-message" id="output">
+                    <p>Current Time: <span id="currentTime"></span></p>
+                    <p>Name: <span id="outputName"></span></p>
+                    <p>Birthday: <span id="otputBirthday"></span></p>
+                    <p>Gender: <span id="outputGender"></span></p>
+                    <p>Message: <span id="ouputMessage"></span></p>
                 </div>
             </div>
         </section>

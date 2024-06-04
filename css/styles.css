@@ -287,7 +287,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .gender-message > label {
     margin-right: 50px;
 }
@@ -309,7 +308,7 @@
     resize: none;
 }
 
-.message-message >input::placeholder {
+.message-message > input::placeholder {
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -321,6 +320,42 @@
 
 .content-input-message > div > .colon {
     margin-right: 10px;
+}
+
+.content-input-message > button {
+    height: 30px;
+    width: 84.5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.content-input-message > button:hover {
+    background-color: yellow;
+}
+
+.content-input-message > button > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-output-message {
+    width: 39%;
+    height: 230px;
+    margin-top: 17px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.content-output-message >p {
+    margin-bottom: 10px;
 }
 
 
