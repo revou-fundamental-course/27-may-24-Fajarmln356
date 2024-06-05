@@ -125,11 +125,11 @@
 .profile_container {
     height: auto;
     width: auto;
+    padding-top: 4%;
     border-bottom: 1px solid black;
 }
 
 .profile_header > h2 {
-    margin-top: 4%;
     margin-left: 10%;
     margin-bottom: 4%;
     font-family: Arial, Helvetica, sans-serif;
@@ -184,12 +184,12 @@
 .facilitation-container {
     height: fit-content;
     width: auto;
+    padding-top: 4%;
     border-bottom: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-facilitation {
-    margin-top: 4%;
     margin-left: 10%;
 }
 
@@ -233,12 +233,12 @@
 .message-container {
     height: fit-content;
     width: auto;
+    padding-top: 4%;
     border-bottom: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-message {
-    margin-top: 4%;
     margin-left: 10%;
     margin-bottom: 3.5%;
 }
@@ -354,7 +354,7 @@
     border-radius: 5px;
 }
 
-.content-output-message >p {
+.content-output-message > p {
     margin-bottom: 10px;
 }
 
@@ -388,3 +388,117 @@ footer {
     color: rgb(107, 22, 226);
     
 }
+
+
+/* Responsive Website*/
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        height: fit-content;
+        width: 870px;
+    }
+
+    .home-container {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .home-container > .background {
+        width: 870px;
+        height: 400px;
+    }
+
+    .profile_container {
+        height: fit-content;
+        width: 870px;
+        font-size: small;
+    }
+
+    .profile_about_container {
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .profile_about_container > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile_about_container > .img_profile {
+        margin-right: 50px;
+    }
+
+    .profile_about_container > .about_profile > h3 {
+        font-size: medium;
+    }
+
+    .profile_about_container > .about_profile > p {
+        font-size: small;
+        line-height: 20px;
+    }
+
+    .facilitation-container {
+        height: fit-content;
+        width: 870px;
+        font-size: small;
+    }
+
+    .facilitation-container > .content-facilitation {
+        display: flex;
+    }
+
+    .facilitation-container > .content-facilitation > .content-1-facilitation {
+        margin-left: 60px;
+    }
+
+     .content-img-facilitation > img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .message-container {
+        width: 870px;
+        height: fit-content;
+        font-size: small;
+    }
+
+    .name-message > label {
+        margin-right: 30px;
+    }
+    .name-message > input {
+        width: 180px;
+    }
+
+    .date-message > label {
+        margin-right: 17.5px;
+    }
+    .date-message > input {
+        width: 180px;
+    }
+
+    .gender-message > label {
+        margin-right: 22px;
+    }
+
+    .message-message > label {
+        margin-right: 16.5px;
+    }
+    .message-message > textarea {
+        width: 195px;
+        height: 100px;
+    }
+
+    .content-input-message > button {
+        width: 281px;
+    }
+
+    .footer-container {
+        width: 870px;
+        height: fit-content;
+        font-size: medium;
+        padding-right: 0px
+    }
+
+    .footer-container > h2 {
+        margin-right: 65px;
+    }
+} 
