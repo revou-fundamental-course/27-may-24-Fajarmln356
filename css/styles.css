@@ -86,6 +86,39 @@
     background-color: yellow;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff8c;
+    backdrop-filter: var(blur);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a {
+    padding-left: 30px;
+    color: black;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 0, 0.617);
+}
+
 /*------ Home Container ------*/
 .home-container {
     width: auto;

@@ -17,14 +17,42 @@
                 <img src="Assets/image/Logo_FJ.png" alt="Logo Revo.U">
         </section>
 
+        <section class="sidebar">
+            <a href="#" onclick=hideSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </a>
+            <a href="index.html" title="Home" target="_self">Home</a>
+            <a href="#profile" title="Our Profile" target="_self">Our Profile</a>
+            <a href="#facilitation" title="Facilitation">Facilitation</a>
+            <a href="#message-us" title="Message Us">Message Us</a>
+        </section>
         <section class="nav-menu">
             <a class="nav-home" href="index.html" title="Home" target="_self">Home</a>
             <a class="nav-profile" href="#profile" title="Our Profile" target="_self">Our Profile</a>
             <a class="nav-facilitation" href="#facilitation" title="Facilitation">Facilitation</a>
             <a class="nav-message" href="#message-us" title="Message Us">Message Us</a>
+            <a class="menu-button" href="#" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+
+            
         </section>
     </nav>
+    <script>
+        function showSidebar (){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
 
+        function hideSidebar () {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
     <!-- Main Content -->
     <main>
         <!-- Home Content -->
@@ -95,36 +123,36 @@
                     <div class="name-message">
                         <label for="fname">Name</label>
                         <span class="colon">:</span>
-                        <input type="text" placeholder="Name" id="name">
+                        <input required type="text" placeholder="Name" id="name">
                     </div>
                     <div class="date-message">
                         <label for="date">Birthday</label>
                         <span class="colon">:</span>
-                        <input type="date" id="birthDay">
+                        <input required type="date" id="birthDay">
                     </div>
                     <div class="gender-message">
                         <label for="gender">Gender</label>
                         <span class="colon">:</span>
                         <label for="male">
-                            <input type="radio" name="radio">
+                            <input required type="radio" name="radio">
                             <span>Male</span>
                         </label>
                         <label for="female">
-                            <input type="radio" name="radio">
+                            <input required type="radio" name="radio">
                             <span>Female</span>
                         </label>
                     </div>
                     <div class="message-message">
                         <label for="message">Message</label>
                         <span class="colon">:</span>
-                        <textarea name="message" id="message-area" placeholder="Write a message for Us"></textarea>
+                        <textarea required name="message" id="message-area" placeholder="Write a message for Us"></textarea>
                     </div>
                     <button type="submit">
                         <span>Submit</span>
                     </button>
                 </form>
 
-                <div class="content-output-message" id="output">
+                <div class="content-output-message" id="output" readonly>
                     <p>Current Time: <span id="currentTime"></span></p>
                     <p>Name: <span id="outputName"></span></p>
                     <p>Birthday: <span id="otputBirthday"></span></p>
