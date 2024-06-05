@@ -34,7 +34,7 @@
 .nav-menu > a {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 7px 20px 7px 20px;
+    padding: 8px 20px 6px 20px;
     font-size: 15px;
     background-color: white;
     text-align: center;
@@ -160,6 +160,7 @@
     width: auto;
     padding-top: 4%;
     border-bottom: 1px solid black;
+    background-color: #ffffff9f;
 }
 
 .profile_header > h2 {
@@ -234,18 +235,22 @@
 
 .content-1-facilitation {
     margin-left: 15%;
+    text-align: center;
 }
 
 .content-2-facilitation {
     margin-left: 10%;
+    text-align: center;
 }
 
 .content-3-facilitation {
     margin-left: 10%;
+    text-align: center;
 }
 
 .content-4-facilitation {
     margin-left: 10%;
+    text-align: center;
 }
 
 .content-img-facilitation {
@@ -355,7 +360,7 @@
     margin-right: 10px;
 }
 
-.content-input-message > button {
+.content-input-message > .submit {
     height: 30px;
     width: 84.5%;
     margin-top: 10px;
@@ -367,14 +372,8 @@
     cursor: pointer
 }
 
-.content-input-message > button:hover {
+.content-input-message > .submit:hover {
     background-color: yellow;
-}
-
-.content-input-message > button > span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .content-output-message {
@@ -391,6 +390,13 @@
     margin-bottom: 10px;
 }
 
+.content-input-message #error-message {
+    color: red;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
 
 /*------ Footer Container ------*/
 footer {
@@ -532,7 +538,7 @@ footer {
     .content-input-message {
         width: 40%;
     }
-    .content-input-message > button {
+    .content-input-message > .submit {
         width: 290px;
     }
 
@@ -624,7 +630,6 @@ footer {
         width: 120px;
         height: 120px;
     }
-
     .message-container {
         width: 950px;
         height: fit-content;
@@ -659,7 +664,7 @@ footer {
     .content-input-message {
         width: 40%;
     }
-    .content-input-message > button {
+    .content-input-message > .submit {
         width: 290px;
     }
 
