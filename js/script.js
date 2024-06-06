@@ -1,14 +1,13 @@
 // Javascript Page //
 
-
+// Change Name 
 function replaceName() {
- let name = prompt("What is your name?", "");
+  let name = prompt("What is your name?", "");
   document.getElementById("name").innerHTML = name + "!"
 }
-
 replaceName ()
 
-
+// Sidebar
 function showSidebar (){
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'flex';
@@ -19,7 +18,7 @@ function hideSidebar () {
   sidebar.style.display = 'none';
 }
 
-
+// Validate Form
 function displayResult() {
 
   const name = document.forms["message-Form"]["name"].value;

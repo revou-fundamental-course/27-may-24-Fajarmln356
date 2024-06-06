@@ -18,16 +18,18 @@
     align-items: center;
 }
 
+.navbar-img {
+    margin-left: 5%;
+}
 .navbar-img img {
     width: 10%;
     height: 10%;
-    margin-top: 1%;
-    margin-left: 13%;
+    
 }
 
 .nav-menu {
     display: flex;
-    margin-right: 8%;
+    margin-right: 6%;
 }
 
 
@@ -84,6 +86,10 @@
 }
 .nav-message:hover {
     background-color: yellow;
+}
+
+.menu-button {
+    margin-right: 4%;
 }
 
 .sidebar {
@@ -299,10 +305,20 @@
     background-color: yellow;
 }
 
+.col {
+    height: 25px;
+    width: 200px;
+}
+
+.col-message {
+    height: 80px;
+    width: 200px;
+}
+
 .content-output-message {
     width: 39%;
     height: 230px;
-    margin-left: 200px;
+    margin-left: 15%;
     margin-bottom: 35px;
     padding-top: 20px;
     padding-left: 20px;
@@ -329,11 +345,11 @@ footer {
     width: auto;
     text-align: end;
     padding-top: 30px;
-    padding-right: 65px;
     padding-bottom: 30px;
 }
 
 .footer-container > h2 {
+    margin-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-weight: lighter;
@@ -351,180 +367,249 @@ footer {
 
 
 /* Responsive Website*/
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* Phone */
+@media only screen and (max-width: 600px) {
     .navbar-container {
+        width: 890px;
         height: fit-content;
-        width: 1024px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar-img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-button svg {
+        width: 60px;
+        height:60px;
     }
 
     .home-container {
         width: fit-content;
         height: fit-content;
     }
-
     .home-container > .background {
-        width: 1024px;
-        height: 400px;
+        width: 890px;
+        height: 500px;
     }
 
     .profile_container {
+        width: 890px;
         height: fit-content;
-        width: 1024px;
     }
 
+    .profile_header {
+        margin-top: 25px;
+    }
+
+    .profile_header h2 {
+        font-size: xx-large;
+        margin-left: 0;
+        text-align: center;
+    }
+    
     .profile_about_container {
-        padding-left: 100px;
+        padding: 0;
+        flex-direction: column;
         margin-bottom: 50px;
     }
 
+    .img_profile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_profile img {
+        height: 320px;
+        width: 320px;
+
+    }
+
+    .img_profile span {
+        font-size: large;
+    }
+
+    .about_profile {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_profile > h3 {
+        font-size: x-large;
+    }
+
+    .about_profile > p {
+        font-size: larger;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .facilitation-container {
+        width: 890px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-facilitation {
+        margin: 0;
+    }
+    .header-facilitation h2 {
+        font-size: xx-large;
+    }
+
+    .content-facilitation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content-1-facilitation {
+        margin-left: 0;
+    }
+    .content-2-facilitation {
+        margin-left: 0;
+    }
+    .content-3-facilitation {
+        margin-left: 0;
+    }
+    .content-4-facilitation {
+        margin-left: 0;
+    }
+
+    .content-img-facilitation img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .content-text-facilitation  {
+        font-size: x-large;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .message-container {
+        width: 890px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-message {
+        margin-left: 0;
+    }
+    .header-message h2 {
+        font-size: xx-large;
+    }
+
+    .content-message {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .input-message {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: large;
+    }
+    .col {
+        height: 50px;
+        width: 350px;
+    }
+
+    .col-message {
+        height: 100px;
+        width: 350px;
+    }
+
+    #input-submit {
+        height: 45px;
+        width: 470px;
+        margin-top: 25px;
+    }
+
+    .content-output-message {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .footer-container {
+        width: 890px;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* larger device*/
+@media only screen and (min-width: 600px) and (max-width: 1240px){
+    .navbar-container {
+        width: 1240px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+    .home-container {
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .home-container > .background {
+        width: 1240px;
+        height: 600px;
+    }
+    
+    .profile_container {
+        height: fit-content;
+        width: 1240px;
+    }
+    
+    .profile_about_container {
+        padding-left: 150px;
+        margin-bottom: 50px;
+    }
+    
     .profile_about_container > img {
         width: 100px;
         height: 100px;
     }
-
+    
     .profile_about_container > .img_profile {
         margin-right: 100px;
     }
-
+    
     .profile_about_container > .about_profile > h3 {
         font-size: medium;
     }
-
+    
     .profile_about_container > .about_profile > p {
-        font-size: small;
+        font-size: medium;
         line-height: 20px;
     }
 
     .facilitation-container {
         height: fit-content;
-        width: 1024px;
-    }
-
-    .facilitation-container > .content-facilitation {
-        display: flex;
-    }
-
-    .content-1-facilitation {
-        margin-left: 150px;
-    }
-
-    .content-2-facilitation {
-        margin-left: 5%;
-    }
-    
-    .content-3-facilitation {
-        margin-left: 5%;
-    }
-    
-    .content-4-facilitation {
-        margin-left: 5%;
-    }
-
-     .content-img-facilitation > img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .message-container {
-        width: 1024px;
-        height: fit-content;
-    }
-
-    .name-message > label {
-        margin-right: 30px;
-    }
-    .name-message > input {
-        width: 180px;
-    }
-
-    .date-message > label {
-        margin-right: 13.9px;
-    }
-    .date-message > input {
-        width: 180px;
-    }
-
-    .gender-message > label {
-        margin-right: 19px;
-    }
-
-    .message-message > label {
-        margin-right: 12px;
-    }
-    .message-message > textarea {
-        width: 195px;
-        height: 100px;
-    }
-
-    .content-input-message {
-        width: 40%;
-    }
-    .content-input-message > .submit {
-        width: 290px;
-    }
-
-    .content-output-message {
-        width: 45%;
-    }
-
-    .footer-container {
-        width: 1024px;
-        height: fit-content;
-        font-size: medium;
-        padding-right: 0px
-    }
-
-    .footer-container > h2 {
-        margin-right: 65px;
-    }
-}
-
-@media (min-width: 324px) and (max-width: 767px) and (orientation: landscape) {
-    .navbar-container {
-        width: 950px;
-    }
-
-    .home-container {
-        width: fit-content;
-        height: fit-content;
-    }
-    
-    .home-container > .background {
-        width: 950px;
-        height: 400px;
-    }
-    
-    .profile_container {
-        height: fit-content;
-        width: 950px;
-    }
-    
-    .profile_about_container {
-        padding-left: 70px;
-        margin-bottom: 50px;
-    }
-    
-    .profile_about_container > img {
-        width: 75px;
-        height: 75px;
-    }
-    
-    .profile_about_container > .img_profile {
-        margin-right: 70px;
-    }
-    
-    .profile_about_container > .about_profile > h3 {
-        font-size: small;
-    }
-    
-    .profile_about_container > .about_profile > p {
-        font-size: smaller;
-        line-height: 20px;
-    }
-
-    .facilitation-container {
-        height: fit-content;
-        width: 950px;
+        width: 1240px;
     }
 
     .facilitation-container > .content-facilitation {
@@ -536,23 +621,23 @@ footer {
     }
 
     .content-2-facilitation {
-        margin-left: 5%;
+        margin-left: 10%;
     }
     
     .content-3-facilitation {
-        margin-left: 5%;
+        margin-left: 10%;
     }
     
     .content-4-facilitation {
-        margin-left: 5%;
+        margin-left: 10%;
     }
 
      .content-img-facilitation > img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
     .message-container {
-        width: 950px;
+        width: 1240px;
         height: fit-content;
     }
 
@@ -563,38 +648,13 @@ footer {
         width: 180px;
     }
 
-    .date-message > label {
-        margin-right: 13.9px;
-    }
-    .date-message > input {
-        width: 180px;
-    }
-
-    .gender-message > label {
-        margin-right: 19px;
-    }
-
-    .message-message > label {
-        margin-right: 12px;
-    }
-    .message-message > textarea {
-        width: 195px;
-        height: 100px;
-    }
-
-    .content-input-message {
-        width: 40%;
-    }
-    .content-input-message > .submit {
-        width: 290px;
-    }
-
     .content-output-message {
-        width: 45%;
+        width: 40%;
+        margin-left: 6%;
     }
 
     .footer-container {
-        width: 950px;
+        width: 1240px;
         height: fit-content;
         font-size: medium;
         padding-right: 0px
@@ -605,4 +665,3 @@ footer {
     }
 
 }
-

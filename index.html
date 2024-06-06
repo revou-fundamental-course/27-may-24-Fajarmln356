@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMA Pengabdi Ilmu</title>
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="our_profile.html">
+
+    <!-- Link to Assets -->
     <link rel="icon" href="Assets/image/Logo_FJ.png" type="icon">
 
 </head>
@@ -33,14 +36,12 @@
             <a class="nav-profile" href="#profile" title="Our Profile" target="_self">Our Profile</a>
             <a class="nav-facilitation" href="#facilitation" title="Facilitation">Facilitation</a>
             <a class="nav-message" href="#message-us" title="Message Us">Message Us</a>
-            <a class="menu-button" href="#" onclick=showSidebar()>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
-            </a>
-
-            
         </section>
+        <a class="menu-button" href="#" onclick=showSidebar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </a>
     </nav>
 
     <!-- Main Content -->
@@ -50,7 +51,7 @@
         <section class="home-container">
             <div class="background">
                 <div>
-                    <h1> Hi, <span id="name"></span> Welcome to Our website</h1>
+                    <h1> Hi <span id="name"></span> Welcome to Our website</h1>
                     <span>This is my first practice website </span>
                 </div>    
             </div>
@@ -79,6 +80,7 @@
             </section>
 
         </section>
+
         <!-- Our facilitation Content -->
         <section class="facilitation-container" id="facilitation">
             <header class="header-facilitation">
@@ -115,25 +117,25 @@
                         <tr>
                             <td style="width: 100px;">Name</td>
                             <td>:</td>
-                            <td style="height: 25px; width: 200px;"><input type="text" name="name" id="input-name" placeholder="Your Name.." style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
+                            <td class="col"><input type="text" name="name" id="input-name" placeholder="Your Name.." style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
                         </tr>
-                        <tr>
+                        <tr >
                             <td>Birthday</td>
                             <td>:</td>
-                            <td style="height: 25px; width: 200px;"><input type="date" name="birthday" id="input-birthday" style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
+                            <td class="col"><input type="date" name="birthday" id="input-birthday" style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
                         </tr>
-                        <tr>
+                        <tr >
                             <td>Gender</td>
                             <td>:</td>
-                            <td style="height: 25px; width: 200px;">
+                            <td class="col">
                                 <input type="radio" name="gender" value="Male"> Male
-                                <input type="radio" name="gender" value="Female" style="margin-left: 10px;"> Female 
+                                <input  type="radio" name="gender" value="Female" style="margin-left: 10px;"> Female 
                             </td>
                         </tr>
-                        <tr>
+                        <tr >
                             <td style="height: 80px;">Message</td>
                             <td>:</td>
-                            <td style="width: 200px;"><textarea name="comment" id="input-comment" placeholder="Write a message for Us" style="height: 80px; width: inherit; border: 1px solid black; border-radius: 5px; padding-top: 5px; padding-left: 5px;"></textarea></td>
+                            <td class="col-message"><textarea name="comment" id="input-comment" placeholder="Write a message for Us" style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-top: 5px; padding-left: 5px;"></textarea></td>
                         </tr>
                         <tr>
                             <td colspan="3"><input type="submit" value="Submit" id="input-submit"></td>
@@ -155,6 +157,9 @@
     <footer class="footer-container">
         <h2>Created By <a href="#">Fajar Maulana</a></h2>
     </footer>
+
+    <!-- Link to Javascript-->
     <script src="js/script.js"></script>
+    
 </body>
 </html>
