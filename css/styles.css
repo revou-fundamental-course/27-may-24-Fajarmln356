@@ -133,7 +133,7 @@
     height: inherit;
     background-size: cover;
     background-position: center;
-    background-image: url(../Assets/image/image_2.png);
+    background-image: url(../Assets/image/image_3.png);
     /*background-repeat: no-repeat;*/
     display: flex;
     justify-content: left;
@@ -283,103 +283,27 @@
 
 .content-message {
     display: flex;
+    justify-content: flex-start;
     padding-left: 10%;
 }
 
-.content-input-message {
-    width: 50%;
-}
-.content-input-message > div {
-    margin-top: 15px;
-}
-
-.name-message > label {
-    margin-right: 60px;
-}
-
-.name-message > input {
-    width: 61.7%;
-    height: 25px;
-    padding-left: 12px;
-    border: 1px solid black;
-    background-color: white;
+#input-submit {
+    height: 25px; 
+    width: 320px; 
+    border: 1px solid black; 
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.name-message > input::placeholder {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-
-.date-message > label {
-    margin-right: 44px;
-}
-
-.date-message > input {
-    width: 61.6%;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-left: 12px;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.gender-message > label {
-    margin-right: 50px;
-}
-
-.message-message > label {
-    margin-right: 43.1px;
-}
-
-.message-message > textarea {
-    width: 63.7%;
-    height: 150px;
-    margin-left: 3.5px;
-    padding: 12px 12px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: white;
-    font-size: medium;
-    resize: none;
-}
-
-.message-message > input::placeholder {
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.message-message {
-    display: flex;
-    align-items: flex-start;
-}
-
-.content-input-message > div > .colon {
-    margin-right: 10px;
-}
-
-.content-input-message > .submit {
-    height: 30px;
-    width: 84.5%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    cursor: pointer
-}
-
-.content-input-message > .submit:hover {
+#input-submit:hover {
     background-color: yellow;
 }
 
 .content-output-message {
     width: 39%;
     height: 230px;
-    margin-top: 17px;
+    margin-left: 200px;
+    margin-bottom: 35px;
     padding-top: 20px;
     padding-left: 20px;
     border: 1px solid black;
@@ -390,13 +314,10 @@
     margin-bottom: 10px;
 }
 
-.content-input-message #error-message {
-    color: red;
-    display: block;
-    padding: 5px 15px;
-    border-radius: 5px;
-    text-align: center;
+table, tr, td {
+    border: 1px solid rgb(255, 255, 255);
 }
+
 
 /*------ Footer Container ------*/
 footer {
