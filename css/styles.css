@@ -457,6 +457,7 @@ footer {
     .facilitation-container {
         width: 890px;
         height: fit-content;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
