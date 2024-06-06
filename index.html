@@ -110,35 +110,35 @@
                 <h2>Message Us</h2>
             </header>
             <div class="content-message">
-                <form class="content-input-message" name="message-Form" onsubmit="return validateForm()">
-                    <div class="name-message">
-                        <label for="fname">Name</label>
-                        <span class="colon">:</span>
-                        <input required type="text" placeholder="Name" name="name" id="name">
-                    </div>
-                    <div class="date-message">
-                        <label for="date">Birthday</label>
-                        <span class="colon">:</span>
-                        <input required type="date" name="birthDay" id="birthDay">
-                    </div>
-                    <div class="gender-message">
-                        <label for="gender">Gender</label>
-                        <span class="colon">:</span>
-
-                        <input required type="radio" name="gender" id="male">
-                        <span>Male</span>
-
-                        <input required type="radio" name="gender" id="Female">
-                        <span>Female</span>
-                        
-                    </div>
-                    <div class="message-message">
-                        <label for="message">Message</label>
-                        <span class="colon">:</span>
-                        <textarea required name="message" id="input-message" placeholder="Write a message for Us"></textarea>
-                    </div>
-                    <span id="error-message"></span>
-                    <input type="submit" value="submit" class="submit">
+                <form class="input-message" name="message-Form" onsubmit="return displayResult()">
+                    <table style="font-family: Arial, Helvetica, sans-serif; font-size: small;">
+                        <tr>
+                            <td style="width: 100px;">Name</td>
+                            <td>:</td>
+                            <td style="height: 25px; width: 200px;"><input type="text" name="name" id="input-name" placeholder="Your Name.." style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
+                        </tr>
+                        <tr>
+                            <td>Birthday</td>
+                            <td>:</td>
+                            <td style="height: 25px; width: 200px;"><input type="date" name="birthday" id="input-birthday" style="height: inherit; width: inherit; border: 1px solid black; border-radius: 5px; padding-left: 5px;" required></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td style="height: 25px; width: 200px;">
+                                <input type="radio" name="gender" value="Male"> Male
+                                <input type="radio" name="gender" value="Female" style="margin-left: 10px;"> Female 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 80px;">Message</td>
+                            <td>:</td>
+                            <td style="width: 200px;"><textarea name="comment" id="input-comment" placeholder="Write a message for Us" style="height: 80px; width: inherit; border: 1px solid black; border-radius: 5px; padding-top: 5px; padding-left: 5px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="submit" value="Submit" id="input-submit"></td>
+                        </tr>
+                    </table>
                 </form>
 
                 <div class="content-output-message" id="output" readonly>
@@ -146,7 +146,7 @@
                     <p>Name: <span id="output-name"></span></p>
                     <p>Birthday: <span id="output-birthday"></span></p>
                     <p>Gender: <span id="output-gender"></span></p>
-                    <p>Message: <span id="ouput-message"></span></p>
+                    <p>Message: <span id="output-message"></span></p>
                 </div>
             </div>
         </section>
